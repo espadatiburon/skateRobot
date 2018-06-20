@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script type = 'text/javascript' src = 'test.js'></script>
+<style>
+#myAnimation {
+  position: absolute;
+  background-image: url('robot.jpg');
+  background-size: 150px 200px;
+  height: 200px;
+  width: 150px;
+}
+</style>
+<body>
+
+<p>
+<button onclick="changeButton()" id = "myButton">Start</button> 
+</p>
+<div id ="myAnimation"></div>
+
+<script> 
+ 
+var robot = new myRobot();
+  function changeButton()
+  {
+    robot.myMove();
+  }
+
+</script>
+
+</body>
+</html>
